@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#1b120d"/>
+  <circle cx="600" cy="380" r="250" fill="#e8d2a0" opacity=".88"/>
+  <circle cx="600" cy="380" r="210" fill="none" stroke="#7a3f1f" stroke-width="28" stroke-dasharray="20 18"/>
+  <path d="M120 530 C350 390 470 620 640 455 C800 300 920 515 1080 380" fill="none" stroke="#f7c65b" stroke-width="18" stroke-linecap="round" opacity=".75"/>
+  <text x="600" y="715" fill="#fff2d1" font-family="Arial, sans-serif" font-size="54" text-anchor="middle" font-weight="700">Da trâu & mặt trống</text>
+</svg>

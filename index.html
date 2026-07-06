@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trống Đọi Tam — Khởi thế nghìn năm</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <audio id="drumAudio" src="assets/audio/trong-doi-tam.mp3" preload="auto"></audio>
+  <nav class="site-chrome" aria-label="Điều hướng chính">
+    <button type="button" data-go="home" class="chrome-home active">Trang chủ</button>
+    <button type="button" data-go="part1">Phần 1</button>
+    <button type="button" data-go="part2">Phần 2</button>
+    <button type="button" data-go="part3">Phần 3</button>
+    <button type="button" data-go="part4">Phần 4</button>
+  </nav>
+
+  <main class="page-stage">
+    <section id="home" class="page-screen active" data-page="home">
+  <header class="hero-v3" id="top" aria-label="Trống Đọi Tam">
+    <img class="hero-layer hero-bg-img" src="assets/hero/bg.jpg" alt="" aria-hidden="true">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-light" aria-hidden="true"></div>
+    <div class="drum-wave wave-1" aria-hidden="true"></div>
+    <div class="drum-wave wave-2" aria-hidden="true"></div>
+    <div class="drum-wave wave-3" aria-hidden="true"></div>
+
+    <img class="hero-layer title-img" src="assets/hero/title.png" alt="Trống Đọi Tam">
+    <img class="hero-layer drum-img" src="assets/hero/drum.png" alt="Chiếc trống Đọi Tam đặt trên giá đỏ">
+    <img class="hero-layer sub-left-img" src="assets/hero/sub-left.png" alt="Khởi thế nghìn năm">
+    <img class="hero-layer sub-right-img" src="assets/hero/sub-right.png" alt="Chuyển mình đón sóng">
+    <img class="hero-layer bird-left-img" src="assets/hero/bird-left.png" alt="" aria-hidden="true">
+    <img class="hero-layer bird-right-img" src="assets/hero/bird-right.png" alt="" aria-hidden="true">
+    <img class="hero-layer ribbon-left-img" src="assets/hero/ribbon-left.png" alt="" aria-hidden="true">
+    <img class="hero-layer ribbon-right-img" src="assets/hero/ribbon-right.png" alt="" aria-hidden="true">
+
+    <button class="drum-start" type="button" aria-label="Gõ một hồi trống để bắt đầu">
+      <span class="drum-start-icon">●</span>
+      <span>Gõ một hồi trống</span>
+    </button>
+    <p class="rotate-hint" aria-hidden="true">Xoay ngang để xem trọn thumbnail</p>
+
+  </header>
+    <section class="book-section" id="open-book" aria-label="Tóm tắt bài viết trong quyển sách mở">
+      <div class="book-bg-glow" aria-hidden="true"></div>
+      <div class="book-intro reveal">
+        <p class="book-sapo">Gần hai thiên niên kỷ trôi qua, âm thanh sấm truyền từ làng nghề trống Đọi Tam đã ghi vào hồn cốt dân tộc, chứng kiến bao tiến trình lịch sử. Bên cạnh những bí mật truyền nghề và kỹ thuật chế tác độc bản được bảo tồn nghiêm ngặt, Đọi Tam đang chứng kiến sự chuyển dịch mô hình mạnh mẽ. Bằng công nghệ số và du lịch trải nghiệm, các hộ làm nghề, thế hệ trẻ đang viết tiếp chương mới với khát vọng đưa di sản cất cánh, vươn mình trong kỷ nguyên mới.</p>
+      </div>
+
+      <div class="book-wrap reveal book-closed" role="region" aria-label="Quyển sách tương tác" tabindex="0">
+        <button class="book-cover" type="button" aria-label="Mở quyển sách">
+          <span>Chạm để mở</span>
+          <strong>Trống Đọi Tam</strong>
+          <small>Mở trang đầu tiên</small>
+        </button>
+        <div class="book-spine" aria-hidden="true"></div>
+        <article class="page page-left">
+          <p>Nếu có một thanh âm nào đủ sức gói gọn cả chiều dài lịch sử, chiều sâu văn hóa và hồn cốt linh thiêng của dân tộc Việt, đó chỉ có thể là tiếng trống Đọi Tam. Nằm nép mình bình yên dưới chân núi Đọi lịch sử thuộc xã Tiên Sơn, thị xã Duy Tiên, tỉnh Hà Nam, ngôi làng cổ kính này từ lâu đã trở thành nơi gìn giữ một báu vật vô giá: Di sản văn hóa phi vật thể quốc gia với bề dày hơn 2000 năm tuổi.</p>
+          <p>Không chỉ là một làng nghề thủ công đơn thuần, Đọi Tam là một hiện tượng văn hóa đặc biệt nhờ sở hữu những giá trị độc bản, tự hào trở thành điểm tựa tâm linh và sinh kế vững chãi cho bao thế hệ người dân nơi đây. Đọi Tam là một “hiện tượng” văn hóa độc bản khi gìn giữ vẹn nguyên được lăng mộ cổ của vị Tổ nghề “Trạng Sấm” và bảo tồn mạch nguồn ký ức bằng luật truyền nghề nghiêm ngặt truyền đời.</p>
+          <p>Sức hút của ngôi làng cổ kính này nằm ở sự hòa quyện đỉnh cao giữa nghệ thuật làm mộc và kỹ nghệ thuộc da, nơi những đôi bàn tay gân guốc của người thợ tài hoa sử dụng đôi tai thẩm âm nhạy bén để dẫm nện trên mặt da trâu, găm chặt đinh tre ghim giữ thanh âm bất di bất dịch của đất trời.</p>
+        </article>
+        <article class="page page-right">
+          <p>Tự hào là chiếc nôi khai sinh ra những cỗ trống sấm kỷ lục tại Văn Miếu - Quốc Tử Giám hay Hoàng thành Thăng Long, tiếng trống Đọi Tam giờ đây đã hóa thành thiết chế văn hóa không thể thiếu, len lỏi từ tiếng trường rộn rã gọi mùa khai trường đến dàn trống hội 104 quả kiêu hãnh vang lên trong các đại lễ lịch sử của dân tộc.</p>
+          <p>Giữa dòng chảy đương đại, Đọi Tam không đứng yên trong những lối mòn cũ mà đang chứng kiến cuộc chuyển mình mạnh mẽ của mô hình “kinh tế di sản”. Bằng việc đưa máy móc hiện đại vào giải phóng sức lao động, ứng dụng internet để mở rộng thị trường, thử nghiệm các tour du lịch trải nghiệm đón khách quốc tế và ấp ủ giấc mơ xuất ngoại chính ngạch, thế hệ trẻ nơi đây đang viết tiếp chương mới đầy kiêu hãnh, đưa tiếng sấm nghìn năm dưới chân núi Đọi cất cánh bay xa.</p>
+          <p>Hãy cùng ngược dòng thời gian, lắng nghe tiếng đục đẽo vang lên từ xưởng ván mỗi sớm mai, để cảm nhận trọn vẹn nhịp đập nghìn năm của Đọi Tam đang hồi sinh và kiêu hãnh cất cánh giữa dòng chảy hiện đại.</p>
+        </article>
+      </div>
+
+      <nav class="chapter-nav" aria-label="Đi tới các phần chính">
+        <button type="button" data-go="part1">Hồi ức nghìn năm</button>
+        <button type="button" data-go="part2">Tuyệt kỹ chế tác</button>
+        <button type="button" data-go="part3">Sức sống thời đại</button>
+        <button type="button" data-go="part4">Khát vọng cất cánh</button>
+      </nav>
+    </section>
+    </section>
+
+    <section id="part1" class="page-screen" data-page="part1" aria-label="Phần 1">
+      <header class="part1-hero" aria-label="Hồi ức nghìn năm dưới chân núi Đọi">
+        <img src="assets/part1/part1-header-final.png" alt="Phần 1: Hồi ức nghìn năm dưới chân núi Đọi">
+      </header>
+
+      <section class="part1-open section-pad">
+        <div class="container narrow">
+          <p class="lead story-lead reveal">Nằm nép mình dưới chân núi Đọi lịch sử, làng nghề trống Đọi Tam (xã Tiên Sơn, thị xã Duy Tiên, tỉnh Hà Nam) đã trải qua hơn mười thế kỷ thăng trầm cùng dâu bể. Tiếng sấm Đọi Tam không chỉ là thanh âm của một nhạc cụ truyền thống, mà là tiếng vọng của lịch sử, là sợi chỉ đỏ nối dài mạch nguồn văn hóa cha truyền con nối qua hàng vạn mùa tính tịch điền.</p>
+        </div>
+      </section>
+
+      <section class="part1-timeline section-pad" id="part1-timeline" aria-label="Timeline lịch sử Đọi Tam">
+        <div class="container">
+          <div class="part1-section-title">
+            <p class="kicker">Timeline</p>
+            <h2>Những hồi trống lịch sử</h2>
+            <p>Chọn từng mốc để mở ra lớp ký ức của làng trống Đọi Tam.</p>
+          </div>
+
+          <div class="timeline-panel reveal orbit-timeline">
+            <div class="timeline-tabs" role="tablist" aria-label="Các mốc lịch sử">
+              <button class="history-tab active" type="button" data-history="0" role="tab" aria-selected="true">
+                <span>Năm 987</span><strong>Tiếng Trống Khởi Nguyên</strong>
+              </button>
+              <button class="history-tab" type="button" data-history="1" role="tab" aria-selected="false">
+                <span>Hơn 1.000 năm qua</span><strong>Bí Truyền &amp; Tiếp Nối</strong>
+              </button>
+              <button class="history-tab" type="button" data-history="2" role="tab" aria-selected="false">
+                <span>Năm 2004</span><strong>Sắc Phong Làng Nghề</strong>
+              </button>
+              <button class="history-tab" type="button" data-history="3" role="tab" aria-selected="false">
+                <span>Năm 2007</span><strong>Tôn Vinh Tầm Quốc Gia</strong>
+              </button>
+              <button class="history-tab" type="button" data-history="4" role="tab" aria-selected="false">
+                <span>20/12/2019</span><strong>Di Sản Quốc Gia</strong>
+              </button>
+            </div>
+
+            <article class="history-card" data-era="987" aria-live="polite">
+              <p class="history-year">Năm 987</p>
+              <h3>Tiếng Trống Khởi Nguyên</h3>
+              <p>Cụ Nguyễn Đức Năng và Nguyễn Đức Bản làm chiếc trống khổng lồ dâng vua Lê Đại Hành trong lễ Tịch điền dưới chân núi Đọi.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="part1-text-flow section-pad">
+        <div class="container narrow">
+          <p>Mười thế kỷ trôi qua, tiếng sấm khởi nguyên của hai anh em họ Nguyễn vẫn dội về trong từng thớ gỗ mít, vách da trâu Đọi Tam. Giữa dải đất hình chữ S với hàng ngàn làng nghề đan xen, Đọi Tam là một trường hợp đặc biệt khi gìn giữ vẹn nguyên được lăng mộ cổ của vị Tổ nghề qua cả ngàn năm dâu bể. Di sản hữu hình ấy chính là cái gốc vững chãi, nuôi dưỡng sức sống mãnh liệt cho một làng nghề vốn đã hòa làm một với hồn cốt của Lễ hội Tịch điền.</p>
+          <p>Lịch sử của làng trống không nằm im lìm trong những trang ngọc phả bám bụi thời gian, nó hiển hiện sinh động trong nhịp đục đẽo vang lên từ các xưởng ván mỗi sớm mai. Ở đó, cái tâm của người thợ Đọi Tam đã hòa cùng hồn cốt của dân tộc, nhưng mạch ngầm nghìn năm ấy đang được những con người hôm nay tiếp nối ra sao giữa dòng chảy hiện đại?</p>
+        </div>
+      </section>
+
+      <section class="lineage-feature section-pad" id="lineage-feature">
+        <div class="container">
+          <div class="lineage-grid">
+            <div class="lineage-copy reveal">
+              <p class="kicker">Bí truyền</p>
+              <h2 class="lineage-heading"><span>“Cha truyền con nối”</span><span>và luật truyền nghề</span><span>bất thành văn</span></h2>
+              <p>Sức mạnh giúp Đọi Tam vượt qua thăng trầm lịch sử nằm ở phương thức truyền nghề đặc trưng qua nhiều thế hệ. Như tại gia đình nghệ nhân Phạm Trí Khang, mạch ngầm này đã bền bỉ chảy suốt bảy đời, từ thời các cụ, ông nội, bố ông, cho đến đời con trai và hiện tại là cháu nội ông vẫn đang tiếp nối.</p>
+              <p>Ở quê hương Đọi Tam, đây là cái nghề cha truyền con nối bám rễ sâu vào từng nếp nhà. Hầu như gia đình nào cũng duy trì truyền thống thế hệ trước dìu dắt thế hệ sau. Thậm chí, với những nhà ít làm nghề hơn, việc học hỏi vẫn diễn ra một cách tự nhiên giữa các anh em trong dòng tộc để cùng nhau giữ lửa cho làng.</p>
+            </div>
+            <div class="heritage-line reveal" aria-label="Mạch truyền nghề bảy đời">
+              <div class="heritage-node">Các cụ</div>
+              <div class="heritage-node">Ông nội</div>
+              <div class="heritage-node">Người cha</div>
+              <div class="heritage-node">Đời con</div>
+              <div class="heritage-node">Đời cháu</div>
+            </div>
+          </div>
+
+          <div class="quote-image-block reveal">
+            <img src="assets/part1/quote-1.jpg" alt="Nghệ nhân Phạm Trí Khang chia sẻ về luật truyền nghề bất thành văn">
+          </div>
+
+          <div class="container narrow inset-copy">
+            <p>Ký ức học nghề của những người thợ già làng Đọi Tam gắn liền với bối cảnh kinh tế gian khó vùng đất chiêm trũng. Nghệ nhân Phạm Trí Khang, nguyên Chủ tịch Hiệp hội sản xuất và kinh doanh trống Đọi Tam nhớ lại: “Ngày xưa tôi học hết cấp 2 (hệ 7/10 cũ) là đã phải đi học nghề vì kinh tế khó khăn, ít gia đình có điều kiện cho con học lên phổ thông trung học. Chủ yếu là học nghề sớm từ năm 12-13 tuổi để mưu sinh, bảo đảm cuộc sống gia đình”.</p>
+            <p>Đến thế hệ ngày nay, tư duy hướng nghiệp của làng nghề đã cởi mở hơn. Thay vì ép buộc theo nghề, các gia đình sẵn sàng tạo điều kiện cho con cháu tiếp tục con đường học vấn nếu có khả năng. Dù vậy, đối với nghề làm trống, người Đọi Tam vẫn tin vào một chữ “duyên” định mệnh.</p>
+            <p>Cũng chính vì khát vọng giữ gìn mạch sống cho quê hương, từ thuở xưa, các bậc tiền nhân Đọi Tam đã đặt ra một luật lệ nghiêm ngặt: Chỉ truyền nghề cho con trai và con dâu, tuyệt đối không truyền cho con gái và con rể.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="part1-shrine section-pad" id="shrine">
+        <div class="container">
+          <div class="part1-section-title shrine-title-block reveal">
+            <p class="kicker">Nơi hồn cốt nghìn năm ở lại</p>
+            <h2>Chiêm Giả Kính</h2>
+            <p>Nằm bình yên dưới chân núi, ngôi lăng mộ của cụ Tổ nghề Trạng Sấm Nguyễn Đức Năng chính là “linh hồn”, là cột mốc tâm linh của cả làng trống.</p>
+          </div>
+
+          <div class="shrine-gallery reveal">
+            <figure><img src="assets/part1/lang-mo-1.jpg" alt="Khu lăng mộ Tổ nghề Trạng Sấm Nguyễn Đức Năng"><figcaption>Không gian lăng mộ dưới chân núi Đọi</figcaption></figure>
+            <figure><img src="assets/part1/lang-mo-2.jpg" alt="Bên trong khu thờ Tổ nghề Trạng Sấm Nguyễn Đức Năng"><figcaption>Chốn linh thiêng của làng trống</figcaption></figure>
+          </div>
+
+          <div class="quote-image-block quote-two reveal">
+            <img src="assets/part1/quote-2.jpg" alt="Nghệ nhân Phạm Trí Khang chia sẻ về ba chữ Chiêm Giả Kính">
+          </div>
+
+          <div class="container narrow inset-copy">
+            <p>Nghệ nhân Phạm Trí Khang chia sẻ: “Ngôi mộ ngày xưa trên có ba chữ đại tự: ‘Chiêm Giả Kính’ (Người đến chiêm bái đều kính cẩn). Hai bên có hai câu đối cổ, một bên là ‘Khâm Cao Sơn Thủy Trí’, một bên là ‘Cốt Tháp Địa Trường Tồn’. Phía ngoài lại có câu: ‘Tổ Thuật Kỳ Ba Viễn’ và ‘Sư Sự Thái Sơn Cao’”.</p>
+            <p>Dù diện mạo bên ngoài ít nhiều thay đổi qua các đợt trùng tu, ngôi lăng mộ vẫn là chốn linh thiêng bất khả xâm phạm của người dân Đọi Tam. Đối với dân làng, điều cốt lõi vượt lên trên mọi thiết kế hay quy hoạch là việc gìn giữ vẹn nguyên phần hồn và giá trị lịch sử tại vị trí ấy.</p>
+            <p>Hơn mười thế kỷ đã trôi qua, những người thợ Đọi Tam vẫn ngày đêm giữ lửa bên những thớ gỗ mít, những tấm da trâu. Tiếng sấm năm xưa vua Lê đánh nhịp, giờ đây đã hóa thành nhịp đập thời gian, bền bỉ và kiêu hãnh chảy dọc theo dòng lịch sử dân tộc.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="page-controls"><button type="button" data-go="home">← Trang chủ</button>
+        <button type="button" data-go="part2">Phần tiếp theo →</button></div>
+    </section>
+
+    <section id="part2" class="page-screen part2-screen" data-page="part2" aria-label="Phần 2">
+      <div class="part2-hero chapter-image-cover">
+        <img src="assets/part2/part2-header-final.jpg" alt="Phần 2 - Tuyệt kỹ chế tác: từ da trâu, gỗ mít hóa tiếng sấm ngàn đời">
+      </div>
+
+      <section class="part2-intro section-pad">
+        <div class="container part2-intro-stack reordered-intro">
+          <div class="media-holder intro-wide-video reveal">
+            <div class="video-shell drive-video featured-video">
+              <iframe src="https://drive.google.com/file/d/18pLlQ2CBAwonp1VI3ZMbLhqrgztYroM0/preview" title="Video tư liệu quy trình làm trống Đọi Tam" allow="autoplay; fullscreen" loading="lazy" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="intro-copy reveal intro-copy-only">
+            <p>Để hoàn thiện một chiếc trống Đọi Tam chuẩn mực, quy trình sản xuất bắt buộc phải trải qua bốn công đoạn chính, tạo thành một vòng đời khép kín chặt chẽ: làm tang trống, thuộc da trâu, bưng mặt trống và sơn vẽ hoàn thiện.</p>
+            <p>Mỗi mắt xích trong chuỗi quy trình này không đơn thuần là kỹ thuật, mà là sự hòa quyện giữa sức mạnh cơ bắp dẻo dai và tư duy thẩm mỹ tinh tế của những người thợ, người nghệ nhân dưới chân núi Đọi.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="part2-bend-text section-pad">
+        <div class="container narrow reveal">
+          <p>Chú Phạm Công Di, chủ cơ sở sản xuất Thành Đạt, người đã có khoảng 30 năm kinh nghiệm gắn bó với xưởng gỗ, chia sẻ về sự thay đổi này: “Những quả trống cao hơn 3 mét bắt buộc phải dùng công nghệ uốn. Công nghệ uốn là dành cho những sản phẩm to, sản phẩm mà bình thường không thể xẻ cong được thì sử dụng công nghệ uốn, là xẻ thẳng và uốn vì bây giờ gỗ rất là đắt.”</p>
+        </div>
+      </section>
+
+      <section class="quote-image-block part2-quote reveal">
+        <img src="assets/part2/quote-3.jpg" alt="Nghệ nhân Phạm Công Di chia sẻ về công nghệ uốn tang trống">
+      </section>
+
+      <section class="part2-model section-pad">
+        <div class="container model-grid model-only">
+          <figure class="model-stage drive-model reveal">
+            <iframe src="https://drive.google.com/file/d/1KLJ1uqdPfLNux594TcqHAvGveYjVpVWh/preview" title="Mô hình 3D trống Đọi Tam" allow="autoplay; fullscreen" loading="lazy" allowfullscreen></iframe>
+            <figcaption>Mô hình 3D minh hoạ trống Đọi Tam · Kéo/xoay để quan sát cấu trúc</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="part2-workflow section-pad" id="process">
+        <div class="container">
+          <div class="section-heading center reveal">
+            <p class="kicker">Quy trình làm trống</p>
+            <h2>Từ gỗ mít, da trâu đến thanh âm bất di bất dịch</h2>
+            <p>Mỗi công đoạn là một nhịp chuyển: vật liệu thô bước qua sức người, máy móc, đôi tai thẩm âm và bàn tay nghệ nhân để thành tiếng trống.</p>
+          </div>
+
+          <article class="craft-step reveal step-wood">
+            <div class="step-copy">
+              <span class="step-badge">Công đoạn 1</span>
+              <h3>Làm tang trống</h3>
+              <p>Sau khi thanh gỗ được luộc chín và đưa vào máy uốn thành hình vòng cung, người thợ sẽ bước vào khâu ghép tang để tạo hình quả trống.</p>
+              <p>Đây là bước đòi hỏi những đôi bàn tay phải cực kỳ khéo léo và chuẩn xác. Máy móc phải chỉnh thật chuẩn, các mép ghép gỗ phải đều tăm tắp để khi dựng lên, quả trống tròn đều, các mạch ghép khít rịt, không có khe hở.</p>
+            </div>
+            <div class="step-media">
+              <div class="video-shell drive-video workshop-video embedded-video inline-drive-video"><iframe src="https://drive.google.com/file/d/13J6Wa2ylYIomzMuUi88Ha3kRxYp9mBJg/preview" title="Video công đoạn 1 - Làm tang trống" allow="autoplay; fullscreen" loading="lazy" allowfullscreen></iframe></div>
+            </div>
+          </article>
+
+          <article class="craft-step reverse reveal step-leather">
+            <div class="step-copy">
+              <span class="step-badge">Công đoạn 2</span>
+              <h3>Làm mặt trống</h3>
+              <p>Da phải được xử lý ngay khi mới cắt tiết để mặt da còn tươi nguyên, tuyệt đối không bị mục hay ải. Trên tấm da trâu thô ráp ấy, người làm phải sử dụng những chiếc dao bào được đặt làm riêng để nạo sạch hoàn toàn lớp váng thịt thừa bám ở mặt trong.</p>
+              <p>Việc bào da phải được thực hiện vô cùng cẩn trọng để tấm da có độ dày mảnh thật đều nhau, bởi chỗ dày chỗ mỏng sẽ ảnh hưởng trực tiếp đến độ tròn của âm thanh và tuổi thọ sản phẩm.</p>
+            </div>
+            <div class="step-media">
+              <div class="video-shell drive-video workshop-video embedded-video inline-drive-video"><iframe src="https://drive.google.com/file/d/1rKOS1cOWu-UAbwNZ1u3DX6HnJicLQJXs/preview" title="Video công đoạn 2 - Làm mặt trống" allow="autoplay; fullscreen" loading="lazy" allowfullscreen></iframe></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="quote-image-block part2-quote reveal">
+          <img src="assets/part2/quote-4.jpg" alt="Thợ bào da Lê Ngọc Trường chia sẻ về việc chọn da trâu">
+        </div>
+
+        <div class="container">
+          <div class="sun-dry-note reveal">
+            <p>Sau khi được nạo sạch váng thịt, tấm da trâu được bưng căng rộng trên các khung phẳng để bước vào giai đoạn phơi khô. Việc phơi da phải chọn những hôm trời nắng gắt để da nhanh khô; chỉ cần trọn vẹn từ 1 đến 2 nắng là da đạt độ dẻo và độ bền tối đa.</p>
+            <p>Nếu gặp ngày không có nắng, người xử lý da buộc phải dùng nhiệt từ củi để sấy khô. Tuy nhiên, da sấy bằng củi vẫn khó đạt chất lượng dẻo dai như khi được đón cái nắng tự nhiên của đất trời.</p>
+          </div>
+
+          <article class="craft-step reveal step-stretch">
+            <div class="step-copy">
+              <span class="step-badge">Công đoạn 3</span>
+              <h3>Căng mặt trống</h3>
+              <p>Khi tang trống đã tròn phom và da trâu đã đạt đủ độ khô dẻo, chiếc trống bước vào khâu quan trọng nhất: bưng mặt trống, hay còn gọi là căng mặt da và chốt đinh.</p>
+              <p>Tấm da trâu sau khi ngâm nước cho mềm lại sẽ được quét một lớp hóa chất chuyên dụng bảo vệ, buộc thành chiếc mê tròn rồi đưa lên dàn cốn để căng mặt. Người thợ dùng hệ thống tời kích bám chắc vào các đầu dây, dùng lực vặn néo để kéo căng mặt da từ bốn phía.</p>
+            </div>
+            <div class="step-media">
+              <div class="video-shell drive-video workshop-video embedded-video inline-drive-video"><iframe src="https://drive.google.com/file/d/1DG7n6hEc55sSCo1gAmPwdt4Etsg45G5o/preview" title="Video công đoạn 3 - Căng mặt trống" allow="autoplay; fullscreen" loading="lazy" allowfullscreen></iframe></div>
+            </div>
+          </article>
+
+          <article class="craft-step reverse reveal step-finish">
+            <div class="step-copy">
+              <span class="step-badge">Công đoạn 4</span>
+              <h3>Làm đẹp trống</h3>
+              <p>Điểm đặc biệt nhất trong kỹ nghệ bưng trống là người thợ phải trực tiếp trèo lên mặt trống, dùng toàn bộ trọng lượng cơ thể để dẫm, đạp dứt khoát lên mặt da trâu.</p>
+              <p>Trong suốt quá trình dẫm đạp căng mặt, người thợ liên tục gõ thử và ghé sát tai vào tang gỗ để nghe tiếng vang phát ra. Khi âm thanh đã đạt độ tròn, trong và thanh thoát, chiếc đinh tre cuối cùng mới được chốt xuống.</p>
+            </div>
+            <div class="step-media finish-stack">
+              <div class="video-shell drive-video workshop-video embedded-video inline-drive-video"><iframe src="https://drive.google.com/file/d/1HlizSqXM6OcqOKZ8_xVqjj0XTRg4Wmjt/preview" title="Video công đoạn 4 - Làm đẹp trống" allow="autoplay; fullscreen" loading="lazy" allowfullscreen></iframe></div>
+              <div class="pin-moment compact-pin clean-pin-note">
+                <p>Khi thanh âm đã đạt đến độ tròn, trong và thanh thoát đúng yêu cầu, người thợ mới dứt khoát đóng đinh tre chốt chặt mặt da vào thân trống.</p>
+                <p><strong>Một khi chiếc đinh tre cuối cùng găm xuống, âm thanh của chiếc trống sẽ được giữ lại bất di bất dịch.</strong></p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quote-image-block part2-quote reveal">
+        <img src="assets/part2/quote-5.jpg" alt="Nghệ nhân Phạm Trí Khang chia sẻ về khoảnh khắc chốt đinh giữ âm thanh">
+      </section>
+
+      <section class="finishing-note section-pad">
+        <div class="container narrow reveal">
+          <p>Sau khi tiếng trống được định hình, chiếc trống bước vào công đoạn sơn vẽ hoàn thiện để làm đẹp trước khi xuất xưởng. Dưới nét bút uyển chuyển, phóng khoáng của những người thợ giỏi và các nghệ nhân, các họa tiết mây rồng uốn lượn trên thân trống trở nên sống động, có hồn, tôn lên vẻ oai nghiêm và nâng tầm thẩm mỹ cao nhất cho sản phẩm làng nghề.</p>
+        </div>
+      </section>
+
+      <section class="craft-hands section-pad">
+        <div class="container">
+          <div class="section-heading center reveal craft-hands-heading">
+            <p class="kicker">Bàn tay lành nghề</p>
+            <h2>Những bàn tay gân guốc giữ mạch sống quê hương</h2>
+            <p>Nghề làm trống Đọi Tam vốn là sự hòa quyện đỉnh cao giữa hai kỹ nghệ: nghề mộc làm tang và nghề da thuộc mặt trống. Anh Phạm Công Di khẳng định, tay nghề này bắt buộc phải trải qua quá trình đào tạo vô cùng nghiêm ngặt, đòi hỏi cả người truyền đạt và người học đều phải có kỹ năng tốt thì mới có thể tạo ra một thế hệ thợ kế cận chất lượng cho làng nghề.</p>
+            <p>Hình ảnh đặc trưng nhất tại các xưởng trống Đọi Tam là đôi bàn tay gân guốc, khỏe khoắn và đầy những vết chai sần của những người thợ quanh năm bám xưởng. Những động tác của họ khi quai búa đục tang gỗ, khi dẫm nện trên mặt da trâu hay lúc cầm dao loang loáng nạo da đều toát lên vẻ dứt khoát, mạnh mẽ nhưng lại vô cùng khéo léo, chuẩn xác đến từng milimet.</p>
+          </div>
+          <div class="album-grid reveal">
+            <img src="assets/part2/album-01.jpg" alt="Mài thanh gỗ làm tang trống">
+            <img src="assets/part2/album-02.jpg" alt="Người thợ đo và ghép thanh gỗ cong">
+            <img src="assets/part2/album-03.jpg" alt="Bôi keo lên các thanh gỗ cong">
+            <img src="assets/part2/album-04.jpg" alt="Bào da trâu làm mặt trống">
+            <img src="assets/part2/album-05.jpg" alt="Bắn đinh cố định mặt trống">
+            <img src="assets/part2/album-06.jpg" alt="Đưa thanh gỗ vào máy ép uốn">
+            <img src="assets/part2/album-07.jpg" alt="Chốt dây và căng mặt trống">
+            <img src="assets/part2/album-08.jpg" alt="Người thợ đứng dẫm mặt trống">
+            <img src="assets/part2/album-09.jpg" alt="Dụng cụ trên mặt trống">
+            <img src="assets/part2/album-10.jpg" alt="Buộc dây quanh mặt trống">
+            <img src="assets/part2/album-11.jpg" alt="Sơn hoàn thiện thân trống">
+            <img src="assets/part2/album-12.jpg" alt="Chẻ đinh tre và hoàn thiện mặt trống">
+            <img src="assets/part2/album-13.jpg" alt="Lắp khoen kim loại cho trống">
+          </div>
+        </div>
+      </section>
+
+      <section class="podcast-holder section-pad">
+        <div class="container podcast-grid">
+          <div class="podcast-copy reveal">
+            <p class="kicker">Podcast / video tư liệu</p>
+            <h2>Những chia sẻ của bác Phạm Chí Khang về sự gắn bó với nghề làm trống</h2>
+            <p>Dù lịch sử có những giai đoạn thăng trầm và thu nhập từ nghề làm trống đôi lúc không thể so sánh với các ngành công nghiệp hiện đại, nhưng những người con Đọi Tam vẫn miệt mài gắn bó với tiếng bào gỗ, tiếng nện da trâu từ năm 14, 15 tuổi. Sự say mê bám trụ từ thuở thiếu thời chính là minh chứng cho tình yêu quê hương và lòng tự hào về di sản của cha ông, hiện thực hóa câu nói “nhất nghệ tinh, nhất thân vinh” mà tiền nhân để lại.</p>
+          </div>
+          <div class="podcast-audio-card reveal">
+            <button class="podcast-play" type="button" data-target="part2-podcast-frame"><span>▶</span> Nghe chia sẻ</button>
+            <div class="podcast-frame" id="part2-podcast-frame" hidden>
+              <iframe src="https://drive.google.com/file/d/1cTPZJahPxYTvPPf4AsV48jGP8hh-6MsK/preview" title="Podcast video Phạm Trí Khang về nghề làm trống" allow="autoplay; fullscreen" loading="lazy" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mini-game section-pad" id="mini-game">
+        <div class="container">
+          <div class="section-heading center reveal">
+            <p class="kicker">Puzzle game</p>
+            <h2>Ghép trống Đọi Tam</h2>
+            <p>Kéo thả 5 công đoạn vào đúng thứ tự để hoàn thiện một hồi trống. Trên điện thoại, chạm một thẻ rồi chạm vào ô muốn đặt.</p>
+          </div>
+
+          <div class="game-board reveal" aria-live="polite">
+            <div class="game-bank" aria-label="Các công đoạn cần sắp xếp">
+              <button class="game-piece" draggable="true" data-order="3" data-shuffle="1"><span>●</span><strong>Bưng mặt trống</strong><small>Căng mặt da bằng tời, dẫm và thẩm âm.</small></button>
+              <button class="game-piece" draggable="true" data-order="1" data-shuffle="2"><span>●</span><strong>Làm tang trống</strong><small>Gỗ mít được ghép thành thân trống.</small></button>
+              <button class="game-piece" draggable="true" data-order="5" data-shuffle="3"><span>●</span><strong>Sơn vẽ hoàn thiện</strong><small>Khoác sắc lễ hội cho chiếc trống.</small></button>
+              <button class="game-piece" draggable="true" data-order="2" data-shuffle="4"><span>●</span><strong>Thuộc da trâu</strong><small>Da được xử lý, nạo sạch và phơi đủ nắng.</small></button>
+              <button class="game-piece" draggable="true" data-order="4" data-shuffle="5"><span>●</span><strong>Chốt đinh tre</strong><small>Giữ thanh âm đã đạt chuẩn.</small></button>
+            </div>
+            <div class="game-slots" aria-label="Thứ tự công đoạn">
+              <div class="drop-slot" data-slot="1"><span>1</span></div>
+              <div class="drop-slot" data-slot="2"><span>2</span></div>
+              <div class="drop-slot" data-slot="3"><span>3</span></div>
+              <div class="drop-slot" data-slot="4"><span>4</span></div>
+              <div class="drop-slot" data-slot="5"><span>5</span></div>
+            </div>
+            <div class="game-actions">
+              <button class="check-game" type="button">Kiểm tra hồi trống</button>
+              <button class="reset-game" type="button">Làm lại</button>
+            </div>
+            <p class="game-message">Gợi ý: tang trống có trước; âm thanh chỉ được giữ lại sau khi chốt đinh.</p>
+          </div>
+        </div>
+      </section>
+      <div class="page-controls"><button type="button" data-go="home">← Trang chủ</button>
+        <button type="button" data-go="part1">← Phần trước</button>
+        <button type="button" data-go="part3">Phần tiếp theo →</button></div>
+    </section>
+
+    <section id="part3" class="page-screen part3-screen" data-page="part3" aria-label="Phần 3">
+      <div class="part3-hero chapter-image-cover">
+        <img src="assets/part3/part3-header-final.jpg" alt="Phần 3 - Sức sống ngàn năm trường tồn cùng nhịp đập thời đại">
+      </div>
+
+      <section class="part3-intro section-pad">
+        <div class="container part3-intro-stack">
+          <div class="part3-intro-copy reveal">
+            <p class="kicker">Sức sống làng nghề</p>
+            <h2>Ngọn lửa nghề giữa nhịp sống hôm nay</h2>
+            <p>Trải qua bao biến thiên của lịch sử và những thăng trầm của thời cuộc, khi không ít làng nghề truyền thống đang đứng trước nguy cơ mai một, làng trống Đọi Tam vẫn kiên cường giữ gìn được ngọn lửa nghề của cha ông và ngày càng vươn mình phát triển mạnh mẽ.</p>
+            <p>Những thanh âm ấy đóng góp một phần không nhỏ vào công cuộc gìn giữ bản sắc văn hóa dân tộc và nâng tầm thương hiệu di sản Việt.</p>
+          </div>
+          <div class="part3-video-wide reveal">
+            <iframe src="https://drive.google.com/file/d/115R7sxQpyODivO3-0QRq2fne9flDElNo/preview" title="Video tư liệu sức sống làng trống Đọi Tam" allow="autoplay; fullscreen" loading="lazy" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="part3-stats section-pad" id="vitality">
+        <div class="container">
+          <div class="part3-section-title reveal">
+            <p class="kicker">Infographic</p>
+            <h2>Những con số giữ nhịp làng nghề</h2>
+            <p>Đằng sau mỗi hồi trống là một cộng đồng đang ngày đêm vận hành, truyền nghề và mở rộng sinh kế.</p>
+          </div>
+          <div class="part3-stat-grid">
+            <article class="part3-stat reveal"><strong data-count="672">0</strong><span>hộ dân sinh sống tại làng</span></article>
+            <article class="part3-stat reveal"><strong data-count="300">0</strong><span>gần 300 hộ gắn bó với nghề</span></article>
+            <article class="part3-stat reveal"><strong data-count="62">0</strong><span>xưởng sản xuất hoạt động</span></article>
+            <article class="part3-stat reveal"><strong data-count="5">0</strong><span>nghệ nhân ưu tú</span></article>
+            <article class="part3-stat reveal"><strong data-count="32">0</strong><span>thợ giỏi</span></article>
+            <article class="part3-stat reveal"><strong data-count="20">0</strong><span>hơn 20 chủng loại sản phẩm</span></article>
+          </div>
+          <div class="part3-copy reveal">
+            <p>Ngày nay, trong tổng số 672 hộ dân sinh sống tại làng, có tới gần 300 hộ vẫn đang ngày đêm miệt mài gắn bó với nghiệp làm trống. Cả làng hiện duy trì 62 xưởng sản xuất hoạt động liên tục với các quy mô lớn nhỏ khác nhau, phụ trách đan xen nhiều công đoạn chuyên biệt để tạo nên một dây chuyền thủ công nhịp nhàng.</p>
+            <p>Làng nghề cũng quy tụ đội ngũ nhân lực tài hoa với tay nghề cao, bao gồm 5 nghệ nhân ưu tú và 32 thợ giỏi. Đây chính là những “báu vật sống” đang ngày đêm miệt mài giữ lửa nghề và truyền dạy những bí quyết tinh hoa nhất cho thế hệ mai sau.</p>
+            <p>Sức vóc của làng nghề không chỉ nằm ở những con số nhân lực mà còn hiện diện rõ nét qua sự đồ sộ và đa dạng của các sản phẩm. Trống Đọi Tam hiện nay tự hào cung cấp ra thị trường trên 20 chủng loại khác nhau, từ trống đồ chơi nhỏ chỉ 8cm đến những cỗ trống có đường kính mặt lên tới 2,45m.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="record-drums section-pad">
+        <div class="container">
+          <div class="part3-section-title reveal">
+            <p>Các sản phẩm trải dài từ những chiếc trống đồ chơi nhỏ xinh có đường kính chỉ vỏn vẹn 8cm, cho đến những cỗ trống khổng lồ với đường kính mặt lên tới 2,45m. Âm vang của trống Đọi Tam len lỏi vào mọi ngóc ngách của đời sống văn hóa, tâm linh người Việt: từ tiếng trống trường rộn rã gọi mùa thu khai trường, tiếng trống hội tưng bừng giục giã bước chân người, tiếng trống linh thiêng uy nghi trong các nghi lễ tế tự, đình chùa, cho đến nhịp trống trung thu rộn ràng múa lân hay những nhịp phách uyển chuyển, dồn dập trong các đoàn nghệ thuật biểu diễn.</p>
+          </div>
+          <div class="part3-section-title reveal">
+            <p class="kicker">Dấu mốc quốc gia</p>
+            <h2>Hai cỗ trống sấm kỷ lục</h2>
+            <p>Đặc biệt, niềm tự hào lớn nhất của người dân nơi đây là những sản phẩm mang thương hiệu Đọi Tam luôn vinh dự được gắn liền với các dấu mốc lịch sử, những sự kiện trọng đại của đất nước. Làng nghề chính là “chiếc nôi” khai sinh ra hai chiếc trống sấm có kích thước kỷ lục lớn nhất cả nước.</p>
+          </div>
+          <div class="record-duo reveal">
+            <article class="record-drum-card">
+              <figure><img src="https://drive.google.com/thumbnail?id=1beN4x7faRn-QsjMvbBW4-YciAw4r52XQ&sz=w1600" alt="Trống sấm tại Văn Miếu - Quốc Tử Giám"><figcaption>Nguồn: Sưu tầm</figcaption></figure>
+              <div><span>Văn Miếu - Quốc Tử Giám</span><h3>Trống sấm kỷ niệm 990 năm Thăng Long - Hà Nội</h3><p>Chiếc trống sấm đầu tiên được các nghệ nhân chế tác bằng cả tâm huyết, hiện trưng bày trang nghiêm tại Lầu trống thuộc di tích Quốc gia đặc biệt Văn Miếu - Quốc Tử Giám.</p><ul><li>Cao 2,65m, đường kính mặt trống 2,01m.</li><li>1.999 chiếc đinh mũ bằng tre.</li><li>50 thanh gỗ mít cổ thụ khoảng 300 năm tuổi.</li><li>Mặt trống bưng bằng da của hai con trâu mộng 15 tuổi, mỗi con khoảng 600kg.</li></ul></div>
+            </article>
+            <article class="record-drum-card">
+              <figure><img src="https://drive.google.com/thumbnail?id=12W_XKzqOzh-2WcMppQEeY-3ZHgFo11Qw&sz=w1600" alt="Trống sấm tại Hoàng thành Thăng Long"><figcaption>Nguồn: Sưu tầm</figcaption></figure>
+              <div><span>Hoàng thành Thăng Long</span><h3>Trống sấm Đại lễ 1.000 năm Thăng Long - Hà Nội</h3><p>Tiếp nối thành công đó, chiếc trống sấm thứ hai ra đời cùng trọn bộ trống hội phục vụ Đại lễ 1.000 năm Thăng Long - Hà Nội, trở thành biểu tượng trường tồn của văn hóa thủ đô.</p><ul><li>Đường kính 2,35m.</li><li>Chiều cao 3m.</li><li>Trọng lượng lên tới 1.300kg.</li></ul></div>
+            </article>
+          </div>
+          <div class="a50-a80-block reveal">
+            <figure><img src="https://drive.google.com/thumbnail?id=1aT2sdG8-qnR-wVBk5A-_7CfxcxB-lhCf&sz=w1600" alt="Dàn trống hội trong các sự kiện đại lễ"><figcaption>Nguồn: Sưu tầm</figcaption></figure>
+            <div>
+              <p class="kicker">A50 · A80</p>
+              <h3>Dàn trống hội 104 quả trong dòng chảy đại lễ</h3>
+              <p>Gần đây nhất, sản phẩm của làng trống Đọi Tam tiếp tục vinh dự được lựa chọn để góp mặt tại Lễ kỷ niệm 50 năm Ngày Giải phóng miền Nam, thống nhất đất nước (A50) và Lễ kỷ niệm 80 năm Cách mạng tháng Tám và Quốc khánh 2/9 (A80). Dàn trống hội hoành tráng gồm 104 quả do Học viện Cảnh sát nhân dân đặt hàng sản xuất trực tiếp tại làng nghề đã tiếp tục khẳng định vị thế độc tôn của Đọi Tam.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="drum-sound section-pad" aria-label="Nghe tiếng trống">
+        <div class="container">
+          <div class="part3-section-title reveal">
+            <p class="kicker">Âm thanh</p>
+            <h2 class="small-sound-title">Ấn vào trống để nghe tiếng trống</h2>
+            <p>Hai âm sắc đời sống: tiếng trống trường gọi mùa khai giảng và tiếng trống lễ vang trong nghi thức cộng đồng.</p>
+          </div>
+          <div class="sound-card-grid reveal">
+            <article class="sound-card sound-audio-card">
+              <img src="https://drive.google.com/thumbnail?id=1mDC0XZ1y08cwExzkE8k2pEuWqwUN64Di&sz=w1000" alt="Trống trường">
+              <button type="button" class="sound-play" data-preview="https://drive.google.com/file/d/1jRKsG6SUxUkqolWcjju15_RKR0UWjElf/preview" data-audio="https://drive.google.com/uc?export=download&id=1jRKsG6SUxUkqolWcjju15_RKR0UWjElf"><span>▶</span> Trống trường</button>
+              <audio data-preview="https://drive.google.com/file/d/1jRKsG6SUxUkqolWcjju15_RKR0UWjElf/preview" src="https://drive.google.com/uc?export=download&id=1jRKsG6SUxUkqolWcjju15_RKR0UWjElf" preload="none"></audio>
+              <p>Âm thanh rộn rã gọi mùa thu khai trường.</p>
+            </article>
+            <article class="sound-card sound-audio-card">
+              <img src="https://drive.google.com/thumbnail?id=155B4tygM_ta7AVN_gTlXa5hUwKNMMhvV&sz=w1000" alt="Trống lễ">
+              <button type="button" class="sound-play" data-preview="https://drive.google.com/file/d/1J-rKK2YJ4_8HKqYuiCIad-0u3QZvG5bm/preview" data-audio="https://drive.google.com/uc?export=download&id=1J-rKK2YJ4_8HKqYuiCIad-0u3QZvG5bm"><span>▶</span> Trống lễ</button>
+              <audio data-preview="https://drive.google.com/file/d/1J-rKK2YJ4_8HKqYuiCIad-0u3QZvG5bm/preview" src="https://drive.google.com/uc?export=download&id=1J-rKK2YJ4_8HKqYuiCIad-0u3QZvG5bm" preload="none"></audio>
+              <p>Âm vang linh thiêng trong đình chùa, hội làng và đại lễ.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="white-case section-pad" style="--case-bg: url('https://drive.google.com/thumbnail?id=1IKW-jNZhQEyQ5AcMePkODnS93eYeC_yq&sz=w2000')">
+        <div class="container">
+          <article class="white-case-card reveal">
+            <p class="kicker">Mở rộng sản phẩm</p>
+            <h2>Không chỉ là trống</h2>
+            <p>Không chịu bó hẹp trong những lối mòn cũ, những người thợ tài hoa còn linh hoạt chuyển mình, ứng dụng kỹ thuật ghép tang trống truyền thống để phát triển thêm các dòng sản phẩm mộc mỹ nghệ gia dụng cao cấp như: bồn tắm gỗ, bình đựng rượu, thùng gỗ và chậu gỗ ngâm chân.</p>
+            <p>Các sản phẩm mang tính ứng dụng cao này không chỉ giúp đa dạng hóa hệ sinh thái sản phẩm, tối đa hóa năng suất lao động mà còn mang lại nguồn thu nhập tăng thêm đáng kể cho người dân địa phương.</p>
+            <div class="case-podcast podcast-audio-card">
+              <button class="podcast-play" type="button" data-target="part3-future-podcast"><span>▶</span> Nghe chia sẻ</button>
+              <div class="podcast-frame" id="part3-future-podcast" hidden>
+                <iframe src="https://drive.google.com/file/d/1DmaszwD0JwtFcZYJ2fCUIhAl6wmjUGQr/preview" title="Podcast về tương lai nghề làm trống" allow="autoplay; fullscreen" loading="lazy" allowfullscreen></iframe>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="modern-chain section-pad">
+        <div class="container">
+          <div class="part3-section-title reveal">
+            <p class="kicker">Chuyển mình</p>
+            <h2>Từ sức người đến máy móc hiện đại</h2>
+            <p>Sự thay đổi thể hiện rõ trong từng công đoạn: từ căng mặt trống, xử lý da trâu đến xẻ tang trống, máy móc đang giải phóng sức lao động nhưng vẫn giữ lại độ tinh xảo của nghề cũ.</p>
+          </div>
+          <div class="modern-photo-row reveal">
+            <img src="https://drive.google.com/thumbnail?id=1fczT_vFxJV3kltPoGIHtGY71UfoatRKM&sz=w1000" alt="Tư liệu sản xuất hiện đại tại Đọi Tam">
+            <img src="https://drive.google.com/thumbnail?id=1B6l0mPyBlpOJsCF_JTkK5Ye8BhPMQzJ8&sz=w1000" alt="Tư liệu máy móc hỗ trợ sản xuất trống">
+            <img src="https://drive.google.com/thumbnail?id=1UH_M1ysqNRy3BJ6pt_NK-MNu8-PPRTcg&sz=w1000" alt="Tư liệu xưởng nghề Đọi Tam">
+          </div>
+          <div class="part3-copy modern-doc-copy reveal"><p>Song song với việc đa dạng hóa sản phẩm, người thợ Đọi Tam cũng chủ động đổi mới phương thức sản xuất để bắt nhịp với thời cuộc. Nghề làm trống vốn chất chứa nhiều mồ hôi nhọc nhằn, khi xưa mọi công đoạn từ xẻ gỗ, thuộc da đến bưng trống đều phải dựa hoàn toàn vào sức người cùng công cụ thô sơ.</p><p>Ngày nay, các xưởng nghề đã mạnh dạn đầu tư hàng loạt trang thiết bị, máy móc hiện đại vào hỗ trợ các khâu sản xuất nặng nhọc, vừa giảm sức lao động, vừa tối ưu hóa nguyên vật liệu và nâng cao độ đồng đều của sản phẩm.</p></div>
+          <div class="chain-grid">
+            <article class="chain-card reveal"><span>01</span><h3>Nêm gỗ, sức người</h3><p>Ngày xưa, căng một mặt trống phải dùng nêm gỗ và sức lực của nhiều thanh niên trai tráng.</p></article>
+            <article class="chain-card reveal"><span>02</span><h3>Tời máy, hệ thống kích</h3><p>Ngày nay, hệ thống kích và các tời máy giúp mặt trống căng phẳng, âm thanh chuẩn xác hơn.</p></article>
+            <article class="chain-card reveal"><span>03</span><h3>Dao bào tay</h3><p>Khâu xử lý da trâu từng phụ thuộc vào đôi tay và dao bào thủ công của người thợ.</p></article>
+            <article class="chain-card reveal"><span>04</span><h3>Máy bào chuyên dụng</h3><p>Máy bào da chuyên dụng giúp xử lý nhanh gọn, đồng đều và giảm sức lao động.</p></article>
+            <article class="chain-card reveal"><span>05</span><h3>Cưa lừa hai người</h3><p>Xẻ tang trống từng là công việc nặng nhọc với cưa lừa kéo hai đầu.</p></article>
+            <article class="chain-card reveal"><span>06</span><h3>Máy cưa công nghiệp</h3><p>Máy móc hiện đại tối ưu vật liệu, nâng sản lượng và giữ độ sắc nét cho sản phẩm.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="commerce-reveal section-pad" aria-label="Ứng dụng internet và thương mại điện tử">
+        <div class="container commerce-layout">
+          <div class="commerce-copy reveal">
+            <p class="kicker">Kỷ nguyên số</p>
+            <h2>Từ xưởng làng lên sàn thương mại điện tử</h2>
+            <p>Điểm sáng đáng tự hào của Đọi Tam trong bức tranh toàn cảnh hiện nay chính là sức trẻ và khả năng thích ứng linh hoạt với thời cuộc. Với sự bùng nổ của khoa học công nghệ, lực lượng nhân công trẻ tại làng đã và đang ứng dụng triệt để sức mạnh của Internet vào công tác tiêu thụ sản phẩm và mở rộng thị trường.</p>
+            <p>Sản phẩm mang thương hiệu Đọi Tam giờ đây không chỉ nằm chờ các đơn đặt hàng theo phương thức truyền thống, mà đã bước lên các sàn thương mại điện tử và được quảng bá rộng rãi qua các nền tảng mạng xã hội.</p>
+            <p>Đây là một phương thức “làm nghề” mang hơi thở thời đại, minh chứng cho công tác bảo tồn, phát huy và truyền lửa giữa các thế hệ tại Đọi Tam đang được thực hiện vô cùng xuất sắc.</p>
+          </div>
+          <figure class="commerce-image reveal" aria-label="Ảnh sàn thương mại điện tử hiện dần theo đoạn đọc">
+            <img src="assets/part3/shopee.png" alt="Sản phẩm trống Đọi Tam được bán trên sàn thương mại điện tử">
+          </figure>
+        </div>
+      </section>
+
+      <section class="tourism-section section-pad">
+        <div class="container">
+          <div class="part3-section-title reveal">
+            <p class="kicker">Du lịch trải nghiệm</p>
+            <h2>Lợi ích kép từ kinh tế di sản</h2>
+            <p>Không chỉ dừng lại ở việc sản xuất hàng hóa, chính quyền và người dân Đọi Tam còn hướng tới mô hình kết hợp du lịch tâm linh với du lịch trải nghiệm làng nghề.</p>
+          </div>
+          <figure class="tourism-grid reveal">
+            <img src="https://drive.google.com/thumbnail?id=1mIHV9wRY4HunyEdjy5R5n0TQW4Pf8WVd&sz=w1200" alt="Du khách trải nghiệm làng nghề Đọi Tam">
+            <img src="https://drive.google.com/thumbnail?id=1JcST54y0WqUx4A9-k4cI_iLqZhVs63sK&sz=w1200" alt="Không gian du lịch trải nghiệm làng nghề">
+            <figcaption>Hình ảnh các khách Tây tham quan làng trống Đọi Tam. Nguồn: Sưu tầm.</figcaption>
+          </figure>
+          <div class="facebook-embed-card reveal fb-player-card">
+            <p class="kicker">Video Facebook</p>
+            <h3>Tư liệu tour trải nghiệm làng trống</h3>
+            <div class="fb-video-frame">
+              <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1435252381050237%2F%3Fs%3Dsingle_unit&show_text=false&width=560" title="Video Facebook về trải nghiệm làng trống Đọi Tam" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+          <div class="part3-copy reveal">
+            <p>Thời gian gần đây, một số tour du lịch trải nghiệm bước đầu đã được tổ chức thử nghiệm, mở cửa đón các đoàn khách quốc tế đến tham quan trực tiếp. Tín hiệu đáng mừng là phản hồi của du khách đều rất tích cực khi được tìm hiểu văn hóa Việt Nam và mãn nhãn với những màn biểu diễn trống hội hào hùng.</p>
+            <p>Các đoàn khách còn được trực tiếp xuống tận phân xưởng, tận mắt chứng kiến những đôi bàn tay tài hoa của người thợ thực hiện đầy đủ các công đoạn để chế tác một chiếc trống hoàn chỉnh. Những trải nghiệm chân thực ấy để lại ấn tượng sâu sắc, khiến du khách bày tỏ sự hài lòng khi ghé thăm.</p>
+            <p>Sau giai đoạn thử nghiệm, chính quyền địa phương cùng các ban ngành và hiệp hội làng nghề đang từng bước nghiệm thu, đánh giá và nghiên cứu để thiết kế một chương trình du lịch trải nghiệm bài bản, mang đậm thương hiệu riêng.</p>
+            <p>Hướng đi chiến lược này hứa hẹn mang lại “lợi ích kép”: tăng thêm thu nhập cho người dân địa phương và các xưởng sản xuất, đồng thời quảng bá thanh âm của làng nghề truyền thống trống Đọi Tam đến gần hơn với du khách thập phương và bạn bè quốc tế.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="page-controls"><button type="button" data-go="home">← Trang chủ</button>
+        <button type="button" data-go="part2">← Phần trước</button>
+        <button type="button" data-go="part4">Phần tiếp theo →</button></div>
+    </section>
+
+    <section id="part4" class="page-screen part4-screen" data-page="part4" aria-label="Phần 4">
+      <div class="part4-hero chapter-image-cover">
+        <img src="assets/part4/part4-header.jpg" alt="Phần 4 - Nhịp trống 2.000 năm tuổi và khát vọng cất cánh trong kỷ nguyên mới">
+      </div>
+
+      <section class="part4-intro section-pad">
+        <div class="container part4-intro-grid">
+          <article class="part4-copy-card reveal">
+            <p class="kicker">Khát vọng cất cánh</p>
+            <h2>Từ làng nghề nghìn năm đến đại sứ văn hóa</h2>
+            <p>Nhìn lại chiều dài lịch sử, hiếm có một làng nghề truyền thống nào tại Việt Nam duy trì được sức sống bền bỉ và mãnh liệt như Đọi Tam. Quần thể không gian văn hóa làng xã nơi đây vẫn giữ trọn vẹn nét đặc trưng của vùng đồng bằng Bắc Bộ với cây đa, bến nước, sân đình.</p>
+            <p>Việc một ngôi làng cổ kính lại ôm trọn trong mình một nghề truyền thống với bề dày lịch sử gần 2.000 năm là một khối tài sản vô giá mà các thế hệ nghệ nhân đi trước đã dày công vun đắp, trao truyền lại cho thế hệ hôm nay.</p>
+          </article>
+          <div class="part4-duo reveal">
+            <img src="https://drive.google.com/thumbnail?id=15wM6vW1w9vu4AQoR-90Jr0fAQecbNahR&sz=w1200" alt="Không gian làng nghề Đọi Tam">
+            <img src="https://drive.google.com/thumbnail?id=10G478ZoI_SioDU1f9e_d0-gSxRIft4pE&sz=w1200" alt="Không gian văn hóa làng nghề">
+          </div>
+        </div>
+      </section>
+
+      <section class="part4-value section-pad">
+        <div class="container narrow">
+          <div class="part4-copy-card reveal">
+            <p>Giá trị của chiếc trống Đọi Tam không đơn thuần dừng lại ở chức năng của một nhạc cụ, mà đã trở thành một thiết chế văn hóa không thể thiếu trong đời sống tinh thần của người Việt. Từ tiếng trống trường gắn liền với sự nghiệp trồng người, tiếng trống hội tưng bừng trong các kỳ lễ hội dân gian, cho đến âm vang linh thiêng nơi chốn đình chùa, tế tự; tất cả đều có sự hiện diện của những sản phẩm mang thương hiệu Đọi Tam.</p>
+            <p>Trong bối cảnh đô thị hóa và nền kinh tế thị trường đang tạo ra những thách thức không nhỏ đối với việc bảo tồn di sản, Đọi Tam lại nổi lên như một điểm sáng về công tác “truyền lửa”. Lớp kế cận của làng nghề đã và đang tiếp bước cha ông, nhạy bén ứng dụng khoa học kỹ thuật để nâng cao năng suất, đồng thời không ngừng sáng tạo các dòng sản phẩm mới.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="export-dream section-pad">
+        <div class="container export-grid">
+          <figure class="export-image reveal">
+            <img src="https://drive.google.com/thumbnail?id=10zlxsfarGwZSK3NJ_aXS4r61A2-2bX_o&sz=w1400" alt="Sản phẩm trống Đọi Tam hướng tới thị trường xa hơn">
+          </figure>
+          <article class="part4-copy-card reveal">
+            <p class="kicker">Bán trống thu Đô-la</p>
+            <h2>Bài toán thị trường và giấc mơ xuất khẩu</h2>
+            <p>Dẫu bức tranh sản xuất đang ở giai đoạn hưng thịnh, những nghệ nhân và chủ xưởng tại Đọi Tam vẫn đau đáu một tầm nhìn dài hạn. Nếu chỉ tập trung khai thác thị trường nội địa, vòng đời của sản phẩm mộc - da vốn có độ bền cao sẽ dẫn đến quy luật tất yếu: khi các thiết chế văn hóa, trường học và tổ chức tôn giáo đã trang bị đủ, sức mua sẽ chững lại.</p>
+            <p>Để giải quyết nguy cơ này, người làm nghề tại Đọi Tam đang ấp ủ một định hướng táo bạo: khát vọng xuất khẩu, vươn ra thị trường quốc tế để đưa chiếc trống truyền thống trở thành một mặt hàng mang đậm bản sắc dân tộc.</p>
+            <p>Việc hỗ trợ xúc tiến thương mại, xây dựng một kênh xuất khẩu chính ngạch sẽ là cầu nối quan trọng, giúp làng nghề mở rộng chuỗi cung ứng, mang lại nguồn ngoại tệ, đồng thời đưa sản phẩm thủ công mỹ nghệ Việt Nam trở thành những đại sứ văn hóa trên thế giới.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="heritage-route section-pad">
+        <div class="container">
+          <div class="part4-section-title reveal">
+            <p class="kicker">Bản đồ di sản</p>
+            <h2>Một cung đường, bốn điểm chạm văn hóa</h2>
+            <p>Bấm từng thẻ địa danh để đường đi trên bản đồ sáng tới điểm đó: Chùa Long Đọi Sơn → Làng trống Đọi Tam → Đền Lảnh Giang → Làng lụa Nha Xá.</p>
+          </div>
+          <div class="heritage-map-scroll reveal" aria-label="Bản đồ minh họa cung đường di sản Duy Tiên">
+            <div class="hanam-map-illustration" aria-hidden="true">
+              <svg viewBox="0 0 1000 520" role="img">
+                <defs><linearGradient id="routeGlow" x1="0" x2="1"><stop stop-color="#ffe59a"/><stop offset="1" stop-color="#ff8f35"/></linearGradient></defs>
+                <path class="map-shape" d="M148 76 C260 10 345 42 420 98 C506 160 570 96 664 116 C786 142 886 240 842 350 C802 448 688 478 574 434 C464 391 415 490 285 442 C148 392 80 277 112 174 C122 139 129 104 148 76Z" />
+                <path class="route-base" d="M255 150 C365 120 438 208 500 252 C575 304 660 250 730 328" />
+                <path class="route-line" d="M255 150 C365 120 438 208 500 252 C575 304 660 250 730 328" />
+                <circle class="route-dot dot-1" cx="255" cy="150" r="13"/><circle class="route-dot dot-2" cx="415" cy="205" r="13"/><circle class="route-dot dot-3" cx="575" cy="275" r="13"/><circle class="route-dot dot-4" cx="730" cy="328" r="13"/>
+                <text x="210" y="125">Long Đọi Sơn</text><text x="377" y="183">Đọi Tam</text><text x="540" y="255">Lảnh Giang</text><text x="704" y="306">Nha Xá</text>
+              </svg>
+              <p class="map-caption">Thị xã Duy Tiên, tỉnh Hà Nam cũ</p>
+            </div>
+            <div class="route-detail-grid">
+              <article class="route-stop-card"><img src="https://drive.google.com/thumbnail?id=1I2Cz2WUatbcTtCl8_2e72KY3ZyeDSWRV&sz=w900" alt="Chùa Long Đọi Sơn"><span>01</span><h3>Chùa Long Đọi Sơn</h3><p>Chùa Long Đọi Sơn nằm trên đỉnh núi Đọi, do vua Lý Thánh Tông và Vương phi Ỷ Lan chủ trì xây dựng năm 1054 - 1058. Năm 1992, chùa được công nhận là Di tích văn hóa lịch sử cấp Quốc gia; đến tháng 12/2017, được xếp hạng Di tích quốc gia đặc biệt.</p></article>
+              <article class="route-stop-card"><img src="https://drive.google.com/thumbnail?id=15wM6vW1w9vu4AQoR-90Jr0fAQecbNahR&sz=w900" alt="Làng trống Đọi Tam"><span>02</span><h3>Làng trống Đọi Tam</h3><p>Nằm dưới chân núi Đọi, làng Đọi Tam vang danh với nghề làm trống độc đáo hơn 1.000 năm, nơi các nghệ nhân giỏi tiếp tục giữ nhịp di sản và đưa âm vang Đọi Tam lan tỏa rộng khắp.</p></article>
+              <article class="route-stop-card"><img src="https://drive.google.com/thumbnail?id=1EApyOiTMLPYjeyp0dqO8BaCcE9l8VRXK&sz=w900" alt="Đền Lảnh Giang"><span>03</span><h3>Đền Lảnh Giang</h3><p>Đền Lảnh Giang là điểm đến tâm linh nổi tiếng, thờ Tam vị danh thần thời Hùng Vương thứ 18 và công chúa Tiên Dung, hấp dẫn du khách bởi vẻ linh thiêng, cổ kính.</p></article>
+              <article class="route-stop-card"><img src="https://drive.google.com/thumbnail?id=1NBb4iuxGQ_MQzwKiCKb1-mxigrkVYE2q&sz=w900" alt="Làng lụa Nha Xá"><span>04</span><h3>Làng lụa Nha Xá</h3><p>Làng lụa Nha Xá có hơn 700 năm lịch sử, nổi tiếng với lụa tơ tằm thủ công tự nhiên, đặc biệt được ưa chuộng để may áo dài và khăn lụa.</p></article>
+            </div>
+          </div>
+          <div class="part4-copy-card reveal route-copy">
+            <p>Nhìn trên bản đồ quy hoạch văn hóa của thị xã Duy Tiên, Đọi Tam đang nắm giữ một lợi thế địa lý và văn hóa đặc biệt. Nơi đây hoàn toàn có thể hình thành một chuỗi liên kết du lịch khép kín và hấp dẫn.</p>
+            <p>Theo định hướng, du khách sau khi chiêm bái di tích Quốc gia đặc biệt Chùa Long Đọi Sơn sẽ được kết nối trực tiếp xuống không gian làng trống dưới chân núi. Từ đây, tour du lịch tiếp tục mở rộng hành trình đưa du khách đến thăm Đền Lảnh Giang uy nghi và trải nghiệm không gian làm lụa truyền thống tại làng Nha Xá.</p>
+            <p>Có thể thấy, Đọi Tam và Nha Xá là hai điểm sáng tiêu biểu nhất trong bản đồ làng nghề của Duy Tiên. Việc xâu chuỗi các điểm đến này sẽ góp phần tạo ra một sản phẩm du lịch có chiều sâu, tăng thời gian lưu trú của du khách, đồng thời tạo không gian trải nghiệm thực tế và kích cầu tiêu thụ sản phẩm tại chỗ cho bà con làng nghề.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="part4-close section-pad">
+        <div class="container narrow">
+          <article class="part4-copy-card reveal finale-card">
+            <p>Tuy nhiên, để đánh thức được “mỏ vàng” tiềm năng này, nỗ lực của một cộng đồng làng nghề là chưa đủ. Cần có sự quan tâm sát sao, quy hoạch bài bản và đầu tư hạ tầng kết nối từ cấp Trung ương, cấp tỉnh cho đến chính quyền cơ sở.</p>
+            <p>Chỉ khi có những chính sách trợ lực kịp thời và một tầm nhìn quy hoạch tổng thể, khát vọng đưa Đọi Tam trở thành điểm sáng trên bản đồ du lịch di sản Việt Nam mới thực sự trở thành hiện thực, góp phần đưa âm vang của làng nghề cất cánh bền vững trong kỷ nguyên mới.</p>
+          </article>
+        </div>
+      </section>
+
+      <div class="page-controls"><button type="button" data-go="home">← Trang chủ</button>
+      <button type="button" data-go="part3">← Phần trước</button></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

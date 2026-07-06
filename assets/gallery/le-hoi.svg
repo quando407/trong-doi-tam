@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs><radialGradient id="r" cx="50%" cy="20%" r="70%"><stop stop-color="#f7c65b"/><stop offset=".35" stop-color="#d96b1f"/><stop offset="1" stop-color="#3c0503"/></radialGradient></defs>
+  <rect width="1200" height="800" fill="url(#r)"/>
+  <g opacity=".9">
+    <circle cx="340" cy="380" r="130" fill="#64100a" stroke="#fff2c7" stroke-width="14"/>
+    <circle cx="600" cy="340" r="175" fill="#64100a" stroke="#f7c65b" stroke-width="18"/>
+    <circle cx="860" cy="380" r="130" fill="#64100a" stroke="#fff2c7" stroke-width="14"/>
+  </g>
+  <path d="M120 610 C250 540 370 650 510 585 C660 520 760 660 1080 560" fill="none" stroke="#fff2c7" stroke-width="20" stroke-linecap="round" opacity=".65"/>
+  <text x="600" y="715" fill="#fff2d1" font-family="Arial, sans-serif" font-size="54" text-anchor="middle" font-weight="700">Không khí lễ hội</text>
+</svg>

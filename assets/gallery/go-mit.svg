@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#250806"/>
+  <g transform="translate(160 170)">
+    <rect x="0" y="80" width="880" height="120" rx="60" fill="#7a3f1f"/>
+    <rect x="90" y="240" width="850" height="110" rx="55" fill="#9e5b2f"/>
+    <rect x="30" y="390" width="900" height="100" rx="50" fill="#5d2d17"/>
+    <path d="M60 140 C250 80 420 190 660 115 C760 82 820 96 900 130" stroke="#f7c65b" stroke-width="10" fill="none" opacity=".65"/>
+    <path d="M120 300 C360 230 520 360 890 288" stroke="#fff2c7" stroke-width="8" fill="none" opacity=".42"/>
+    <path d="M90 440 C340 380 530 510 880 430" stroke="#f7c65b" stroke-width="8" fill="none" opacity=".5"/>
+  </g>
+  <text x="600" y="715" fill="#fff2d1" font-family="Arial, sans-serif" font-size="54" text-anchor="middle" font-weight="700">Gỗ mít làm tang</text>
+</svg>
