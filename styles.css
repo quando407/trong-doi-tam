@@ -1457,6 +1457,10 @@ body.sound-started .drum-wave {
 @media (max-width: 560px) {
   .part1-open { padding-top: 46px; }
   .part1-section-title h2, .lineage-copy h2 { font-size: clamp(2rem, 12vw, 3.2rem); }
+  .part1-timeline .part1-section-title h2 {
+    white-space: nowrap;
+    font-size: clamp(1.3rem, 6.8vw, 3.2rem);
+  }
   .timeline-panel { padding: 14px; border-radius: 24px; }
   .history-tab { min-width: 220px; padding: 12px 13px; }
   .history-card { padding: 22px; border-radius: 22px; }
@@ -2117,6 +2121,10 @@ body.sound-started .drum-wave {
 .part1-timeline .part1-section-title h2 {
   color: #ffe6a3 !important;
   text-shadow: 0 14px 40px rgba(0,0,0,.28), 0 0 30px rgba(255, 198, 75, .22);
+  white-space: nowrap;
+}
+.part1-timeline .part1-section-title {
+  max-width: none;
 }
 .part1-timeline .part1-section-title p:not(.kicker) {
   color: rgba(255, 239, 190, .86) !important;
@@ -5318,9 +5326,10 @@ body.sound-started .drum-img { animation: drumBottomPulse .72s ease both; }
 }
 #home #open-book .book-wrap.book-closed{
   position: relative !important;
-  display: block !important;
-  width: min(1280px, 96vw) !important;
-  min-height: clamp(720px, 78vh, 900px) !important;
+  display: grid !important;
+  place-items: center !important;
+  width: min(980px, 100vw) !important;
+  min-height: calc(100svh - 112px) !important;
   height: auto !important;
   margin: 0 auto !important;
   padding: 0 !important;
@@ -5330,74 +5339,76 @@ body.sound-started .drum-img { animation: drumBottomPulse .72s ease both; }
 }
 #home #open-book .book-wrap.book-closed .book-cover{
   position: absolute !important;
-  right: clamp(48px, 7vw, 112px) !important;
-  left: auto !important;
-  top: clamp(26px, 4.6vh, 58px) !important;
+  right: auto !important;
+  left: 50% !important;
+  top: 50% !important;
   bottom: auto !important;
-  width: clamp(560px, 45vw, 720px) !important;
-  height: clamp(700px, 76vh, 850px) !important;
+  width: min(460px, 58vw, 56svh) !important;
+  height: auto !important;
   min-height: 0 !important;
   max-height: none !important;
-  aspect-ratio: auto !important;
+  aspect-ratio: 2 / 3 !important;
   margin: 0 !important;
-  transform: perspective(1600px) rotateY(-6deg) rotateX(.35deg) !important;
+  transform: translate(-50%, -50%) perspective(1600px) rotateY(-6deg) rotateX(.35deg) !important;
   transform-origin: left center !important;
-  display: block !important;
+  display: grid !important;
+  align-content: center !important;
+  gap: 12px !important;
+  padding: clamp(24px, 3.4vw, 40px) clamp(18px, 2.6vw, 30px) !important;
   overflow: hidden !important;
-  border-radius: 54px 30px 30px 54px !important;
+  border-radius: 36px 24px 24px 36px !important;
   background: linear-gradient(105deg, rgba(112,24,12,.96) 0%, rgba(51,8,5,.98) 62%, rgba(18,2,1,.98) 100%) !important;
   box-shadow: -34px 32px 96px rgba(0,0,0,.42), inset 38px 0 44px rgba(255,210,142,.18), inset -18px 0 38px rgba(0,0,0,.32) !important;
 }
 #home #open-book .book-wrap.book-closed .book-cover::before{
-  left: clamp(24px, 3.4vw, 48px) !important;
-  top: 8% !important;
-  bottom: 8% !important;
-  width: clamp(46px, 4.2vw, 68px) !important;
-  border-radius: 999px !important;
+  left: 20px !important;
+  right: 20px !important;
+  top: 20px !important;
+  bottom: 20px !important;
+  width: auto !important;
+  border-radius: 24px 14px 14px 24px !important;
 }
 #home #open-book .book-wrap.book-closed .book-cover::after{
-  inset: 24px 26px 24px 54px !important;
+  inset: 24px 26px 24px 30px !important;
   border-radius: 28px 38px 38px 28px !important;
 }
 #home #open-book .book-wrap.book-closed .book-cover span{
-  position: absolute !important;
+  position: relative !important;
   z-index: 3 !important;
-  top: 30% !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
   margin: 0 !important;
   white-space: nowrap !important;
+  font-size: clamp(.56rem, .8vw, .68rem) !important;
+  letter-spacing: .28em !important;
 }
 #home #open-book .book-wrap.book-closed .book-cover strong{
-  position: absolute !important;
+  position: relative !important;
   z-index: 3 !important;
-  top: 39.5% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  width: 92% !important;
-  max-width: 92% !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+  width: auto !important;
+  max-width: 82% !important;
+  justify-self: center !important;
   text-align: center !important;
-  white-space: nowrap !important;
-  line-height: .92 !important;
-  font-size: clamp(4.2rem, 5.7vw, 6.7rem) !important;
+  white-space: normal !important;
+  line-height: 1.02 !important;
+  font-size: clamp(1.7rem, 3vw, 2.5rem) !important;
 }
 #home #open-book .book-wrap.book-closed .book-cover small{
-  position: absolute !important;
+  position: relative !important;
   z-index: 3 !important;
-  top: 49.5% !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
   margin: 0 !important;
   white-space: nowrap !important;
+  font-size: clamp(.68rem, 1vw, .8rem) !important;
 }
 #home #open-book .book-wrap.book-closed .book-spine{
-  position: absolute !important;
-  left: calc(100% - clamp(48px, 7vw, 112px) - clamp(560px, 45vw, 720px) + 34px) !important;
-  top: clamp(26px, 4.6vh, 58px) !important;
-  height: clamp(700px, 76vh, 850px) !important;
-  width: clamp(40px, 3.8vw, 62px) !important;
-  border-radius: 999px !important;
-  opacity: .62 !important;
+  display: none !important;
 }
 
 /* After click: show the real opened-book pages; never leave the cover as a sliced vertical artifact */
@@ -5438,16 +5449,18 @@ body.sound-started .drum-img { animation: drumBottomPulse .72s ease both; }
   z-index: 30 !important;
 }
 @media (max-width: 980px){
-  #home #open-book .book-wrap.book-closed{ min-height: 760px !important; }
+  #home #open-book .book-wrap.book-closed{ min-height: calc(100svh - 92px) !important; }
   #home #open-book .book-wrap.book-closed .book-cover{
-    right: 50% !important;
-    width: min(500px, 82vw) !important;
-    height: min(760px, 82vh) !important;
-    transform: translateX(50%) perspective(1600px) rotateY(-6deg) rotateX(.35deg) !important;
+    right: auto !important;
+    left: 50% !important;
+    width: min(320px, 78vw, 58svh) !important;
+    height: auto !important;
+    transform: translate(-50%, -50%) perspective(1600px) rotateY(-6deg) rotateX(.35deg) !important;
   }
   #home #open-book .book-wrap.book-closed .book-cover strong{
     white-space: normal !important;
-    font-size: clamp(3.25rem, 10vw, 4.8rem) !important;
+    font-size: clamp(1.5rem, 7vw, 2.1rem) !important;
+    max-width: 84% !important;
   }
   #home #open-book .book-wrap.book-closed .book-spine{ display: none !important; }
   #home #open-book .book-wrap.open-left,
@@ -5512,4 +5525,139 @@ body.sound-started .drum-img { animation: drumBottomPulse .72s ease both; }
   #home .hero-v3 .title-img { top: 12% !important; width: 118vw !important; }
   #home .book-cover { width: 92vw !important; }
   #home .book-cover strong { white-space: normal !important; }
+}
+
+/* === TRUE PORTRAIT BOOK COVER FIX: make the closed cover tall like a normal book === */
+.book-wrap.book-closed {
+  width: min(980px, 100vw) !important;
+  min-height: calc(100svh - 112px) !important;
+  display: grid !important;
+  place-items: center !important;
+  margin-inline: auto !important;
+  overflow: visible !important;
+}
+
+.book-wrap.book-closed .book-cover {
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  /* width alone drives the size now; height follows from aspect-ratio so the
+     cover always stays a tall portrait rectangle, never wider than tall */
+  width: min(460px, 58vw, 56svh) !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  aspect-ratio: 2 / 3 !important;
+  transform: translate(-50%, -50%) perspective(1300px) rotateY(-7deg) rotateX(1.5deg) !important;
+  transform-origin: left center !important;
+  border-radius: 36px 24px 24px 36px !important;
+  padding: clamp(24px, 3.4vw, 40px) clamp(18px, 2.6vw, 30px) !important;
+  align-content: center !important;
+  gap: 12px !important;
+  background:
+    radial-gradient(circle at 46% 23%, rgba(255, 220, 116, .18), transparent 32%),
+    linear-gradient(135deg, #8b2311 0%, #5b1009 36%, #250503 72%, #120201 100%) !important;
+  box-shadow:
+    inset 42px 0 58px rgba(255, 222, 145, .11),
+    inset 12px 0 28px rgba(255,255,255,.045),
+    inset -18px 0 36px rgba(0,0,0,.34),
+    0 46px 92px rgba(0,0,0,.50) !important;
+}
+
+.book-wrap.book-closed .book-cover:hover {
+  transform: translate(-50%, -51%) perspective(1300px) rotateY(-7deg) rotateX(1.5deg) scale(1.01) !important;
+}
+
+.book-wrap.book-closed .book-cover::before {
+  inset: 20px !important;
+  width: auto !important;
+  border-radius: 24px 14px 14px 24px !important;
+  opacity: .55 !important;
+}
+
+.book-wrap.book-closed .book-cover::after {
+  left: 26px !important;
+  top: 24px !important;
+  bottom: 24px !important;
+  width: 44px !important;
+  border-radius: 999px !important;
+  background: linear-gradient(90deg, rgba(0,0,0,.34), rgba(255,255,255,.08), rgba(255,255,255,.025), transparent) !important;
+  box-shadow: inset 0 0 28px rgba(255,220,140,.10), 0 0 22px rgba(0,0,0,.16) !important;
+}
+
+.book-wrap.book-closed .book-cover span {
+  font-size: clamp(.56rem, .8vw, .68rem) !important;
+  letter-spacing: .28em !important;
+}
+
+.book-wrap.book-closed .book-cover strong {
+  font-size: clamp(1.7rem, 3vw, 2.5rem) !important;
+  line-height: 1.02 !important;
+  max-width: 82% !important;
+  justify-self: center !important;
+}
+
+.book-wrap.book-closed .book-cover small {
+  font-size: clamp(.68rem, 1vw, .8rem) !important;
+}
+
+.book-wrap.open-left .book-cover {
+  transform: translate(-50%, -50%) perspective(1300px) rotateY(-105deg) !important;
+}
+
+@media (max-width: 720px) {
+  .book-wrap.book-closed {
+    min-height: calc(100svh - 92px) !important;
+  }
+
+  .book-wrap.book-closed .book-cover {
+    width: min(320px, 78vw, 58svh) !important;
+    height: auto !important;
+  }
+
+  .book-wrap.book-closed .book-cover strong {
+    font-size: clamp(1.5rem, 7vw, 2.1rem) !important;
+    max-width: 84% !important;
+  }
+}
+
+/* ===== Album gallery hover: ảnh "chìm" xuống + mờ các ảnh còn lại (spotlight) ===== */
+#part2 .craft-hands .album-grid img,
+#part2 .album-grid img {
+  transition:
+    opacity .55s cubic-bezier(.22,.61,.36,1),
+    transform .55s cubic-bezier(.22,.61,.36,1),
+    filter .55s cubic-bezier(.22,.61,.36,1),
+    box-shadow .55s cubic-bezier(.22,.61,.36,1) !important;
+  will-change: transform, opacity, filter;
+  cursor: pointer;
+}
+
+/* Khi rê chuột vào cả khối, mọi ảnh mờ bớt đi để tạo hiệu ứng spotlight */
+#part2 .craft-hands .album-grid:hover img,
+#part2 .album-grid:hover img {
+  opacity: .38 !important;
+  filter: brightness(.55) saturate(.75) !important;
+  transform: translateY(0) scale(.99) !important;
+}
+
+/* Ảnh đang được trỏ chuột vào: sáng rõ lại và "chìm" xuống nhẹ, có bóng đổ tạo chiều sâu */
+#part2 .craft-hands .album-grid img:hover,
+#part2 .album-grid img:hover {
+  opacity: 1 !important;
+  filter: brightness(1) saturate(1.12) !important;
+  transform: translateY(10px) scale(.965) !important;
+  box-shadow:
+    inset 0 22px 34px rgba(0,0,0,.42),
+    0 14px 30px rgba(0,0,0,.35) !important;
+}
+
+@media (hover: none) {
+  /* Thiết bị cảm ứng: giữ ảnh rõ nét, không áp hiệu ứng mờ khi không có hover thật */
+  #part2 .craft-hands .album-grid:hover img,
+  #part2 .album-grid:hover img {
+    opacity: 1 !important;
+    filter: none !important;
+    transform: none !important;
+  }
 }
